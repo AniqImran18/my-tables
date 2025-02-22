@@ -24,11 +24,11 @@
 
     <script>
         async function loadCSV() {
-            const response = await fetch('Table_Input.csv'); // Load CSV file
+            const response = await fetch('Table_Input.csv'); //to load the file
             const data = await response.text();
-            const rows = data.split("\n").map(row => row.split(",")); // Parse CSV
+            const rows = data.split("\n").map(row => row.split(",")); // for parse the CSV
 
-            let values = {}; // Store CSV values in a dictionary
+            let values = {}; // to store CSV values in a dictionary
 
             // Populate Table 1
             let table1 = document.getElementById("table1");
